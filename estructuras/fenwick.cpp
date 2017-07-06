@@ -13,11 +13,11 @@ struct Fenwick{
 	//get largest value with cumulative sum less than or equal to x;
 	//for smallest, pass x-1 and add 1 to result
 	int getind(tipo x) {//O(lgn)
-	  	int idx = 0, mask = N;
-	  	while(mask && idx < N) {
-	   		int t = idx + mask;
-			if(x >= tree[t])
-		  		idx = t, x -= tree[t];
+	  	int idx = 0, mask = n;
+	  	while(mask && idx < n) {
+	   		int z = idx + mask;
+        if(x >= t[z])
+		  		idx = z, x -= t[z];
 	   		mask >>= 1;
 	  	}
 	  	return idx;
