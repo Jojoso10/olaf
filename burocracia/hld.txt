@@ -1,0 +1,15 @@
+Heavy-Light Decomposition:
+  Se basa en dividir las aristas del árbol en aristas pesadas y 
+  aristas livianas. Se fija una raíz del árbol. Una arista es
+  pesada si va hacia un subarbol con >T/2 nodos, donde T es el
+  total de nodos de todos los subárboles juntos. Una propiedad
+  fundamental es que en el camino desde la raíz a un nodo de
+  profundidad n hay a lo más log(n) aristas livianas.
+    Demostración:
+      Al bajar desde la raíz hasta el nodo, si la cantidad de 
+      nodos que estoy considerando en un determinado paso es n,
+      luego de ir por una arista liviana, paso a considerar
+      n/2 nodos.
+
+Problema en Heavy-Light Decomposition:
+  SPOJ: Query on a tree
