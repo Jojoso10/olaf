@@ -3,3 +3,4 @@ Lista histórica de Errores:
   - Hacer una DP/Recursiva que supera los límites de la stack.
   - No checkear el problema contra los casos de ejemplo.
   - No leer bien el enunciado.
+  - No ordenar los arreglos si no te lo garantizan.

@@ -11,5 +11,5 @@ const int MAXN = -1;
 
 int main() {
     
-    return 0;
+  return 0;
 }
