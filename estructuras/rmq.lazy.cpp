@@ -15,7 +15,7 @@ struct RMQ{
 		forn(i, 2*sz) dirty[i]=neutro2;
 	}
 	void push(int n, int a, int b){//propaga el dirty a sus hijos
-		if(dirty[n]!=0){
+		if(dirty[n]!=neutro2){
 			t[n]+=dirty[n]*(b-a);//altera el nodo 
 			if(n<sz){
 				dirty[2*n]+=dirty[n];
