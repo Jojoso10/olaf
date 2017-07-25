@@ -1,4 +1,4 @@
-Cosas para checkear antes del submit:
+Cosas a verificar antes de la submission:
   - Quitar el freopen.
   - Checkear que la DP/Recursiva no supera los límites de la stack.
   - Checkear el problema contra los casos de ejemplo.
