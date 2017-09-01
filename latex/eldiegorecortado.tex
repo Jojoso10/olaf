@@ -293,4 +293,13 @@ setrlimit(RLIMIT_STACK, &rl);
 \begin{code}
 for(int sbm=bm; sbm; sbm=(sbm-1)&bm)
 \end{code}
+\subsection*{Releer una string}
+\begin{code}
+string s; int n;
+getline(cin, s);
+stringstream leer(s);
+while(leer >> n){
+	// do something...
+}
+\end{code}
 \end{document}

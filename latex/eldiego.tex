@@ -3,18 +3,17 @@
 %"The PDF file may contain up to 25 pages of reference material, single-sided, letter or A4 size, with text and illustrations readable by a person with correctable eyesight without magnification from a distance of 1/2 meter."
 \input{preamble.tex}
 \begin{document}
-\def\title{Caloventor en Dos - Universidad Nacional de Rosario}
-\centering{\includegraphics[width=3.5cm]{fotodiego}}
+\def\title{YesIncognitoPlease - Universidad Nacional de Rosario}
+\centering{\includegraphics[width=3.5cm]{../miscellaneous/olaf}}
 \tableofcontents\newpage
  
-\section{algorithm}%%%%%%%%%%%%%%%%%%ALGORITHM%%%%%%%%%%%%%%%%%%
+\section{Referencia}%%%%%%%%%%%%%%%%%%ALGORITHM%%%%%%%%%%%%%%%%%%
 \input{algorithm.tex}
-
 
 \section{Estructuras}%%%%%%%%%%%%%%%%%%ESTRUCTURAS%%%%%%%%%%%%%%%%%%
 \subsection{RMQ (static)}
 Dado un arreglo y una operacion asociativa \emph{idempotente}, get(i, j) opera sobre el rango [i, j). Restriccion: LVL $\ge$ ceil(logn); Usar [ ] para llenar arreglo y luego build().
-\cppfile{estructuras/rmq.static.cpp}
+\cppfile{../estructuras/rmq.static.cpp}
 \subsection{RMQ (dynamic)}
 \cppfile{estructuras/rmq.dynamic.cpp}
 \subsection{RMQ (lazy)}
@@ -32,7 +31,7 @@ Dado un arreglo y una operacion asociativa \emph{idempotente}, get(i, j) opera s
 \subsection{Big Int}
 \cppfile{estructuras/bigint.cpp}
 \subsection{HashTables}
-\cppfile[16-30]{hash.cpp}
+\cppfile[16-30]{string/hash.cpp}
 \subsection{Modnum}
 \cppfile{estructuras/mnum.cpp}
 \subsection{Treap para set}
@@ -45,11 +44,11 @@ Dado un arreglo y una operacion asociativa \emph{idempotente}, get(i, j) opera s
 \cppfile[17-56]{estructuras/convexhull.trick.dyn.cpp}
 \subsection{Gain-Cost Set}
 \cppfile[20-43]{estructuras/gain-cost.set.cpp}
-\subsection{Set con busq binaria}
+\subsection{Set con búsqueda binaria}
 \cppfile[17-26]{estructuras/order.tree.cpp}
 
 
-\section{Algos}%%%%%%%%%%%%%%%%%%ALGORITMOS%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Algoritmos}%%%%%%%%%%%%%%%%%%ALGORITMOS%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Longest Increasing Subsecuence}
 \cppfile[14-42]{algos/lis.cpp}
 \subsection{Alpha-Beta prunning}
@@ -81,7 +80,7 @@ Dado un arreglo y una operacion asociativa \emph{idempotente}, get(i, j) opera s
 \cppfile[17-30]{string/zfunction.cpp}
 
 
-\section{Geometria}%%%%%%%%%%%%%%%%%%GEOMETRIA%%%%%%%%%%%%%%%%%%%%%%
+\section{Geometría}%%%%%%%%%%%%%%%%%%GEOMETRIA%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Punto}
 \cppfile[2-33]{geometria/pto.cpp}
 \subsection{Orden radial de puntos}
@@ -114,7 +113,7 @@ Dado un arreglo y una operacion asociativa \emph{idempotente}, get(i, j) opera s
 \cppfile{geometria/int.circs.cpp}
 
 
-\section{Math}%%%%%%%%%%%%%%%%%%MATH%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Matemática}%%%%%%%%%%%%%%%%%%MATH%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Identidades}
 {
 $\sum_{i=0}^n\binom{n}{i}=2^n$
@@ -143,7 +142,7 @@ $A=I+\frac{B}{2}-1$
 
 
 }%
-\subsection{Ec. Caracteristica}
+\subsection{Ec. Característica}
 $a_0T(n)+a_1T(n-1)+...+a_kT(n-k)=0$
 
 $p(x)=a_0 x^k + a_1 x^{k-1} + ... + a_k$
@@ -350,7 +349,7 @@ $\sigma_1(9896040)$ = 44323200 ; $\sigma_1(9959040)$ = 44553600 ; $\sigma_1(9979
 \cppfile[17-78]{grafos/dynamic.conectivity.cpp}
 
 
-\section{Network Flow}%%%%%%%%%%%%%%%%%%FLOW%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Flujo}%%%%%%%%%%%%%%%%%%FLOW%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Dinic}
 \cppfile[10-76]{flow/dinic.cpp}
 \subsection{Konig}
@@ -363,8 +362,8 @@ $\sigma_1(9896040)$ = 44323200 ; $\sigma_1(9959040)$ = 44553600 ; $\sigma_1(9979
 \cppfile[16-66]{flow/min.cost.max.flow.cpp}
 
 
-\section{Template}%%%%%%%%%%%%%%%%%%TEMPLATE%%%%%%%%%%%%%%%%
-\cppfile{template.cpp}
+\section{Plantilla}%%%%%%%%%%%%%%%%%%TEMPLATE%%%%%%%%%%%%%%%%
+\cppfile{miscellaneous/template.cpp}
 
 
 \section{Ayudamemoria}%%%%%%%%%%%%%%%%%%AYUDAMEMORIA%%%%%%%%%%%%%%%%
