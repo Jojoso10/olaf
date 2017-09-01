@@ -1,19 +1,9 @@
-El Diego
-=======
+# Olaf
 
-This is a collection of implementations of different algorithms our team "Caloventor en Dos" used at ACM-ICPC. Everything is put in eldiego.pdf, and a stripped down version eldiegorecortado.pdf is the one we used in the the World Finals (since it has a limit of 25 pages).
+![Olaf, de Frozen](https://raw.githubusercontent.com/mredigonda/olaf/master/miscellaneous/olaf.jpeg)
 
-Notebook del equipo Caloventor en Dos. Gabina Rlz.
+## Qué es?
 
-Colores para el Geany!
-------------
-1) En la terminal:
-> curl -O labdcc.fceia.unr.edu.ar/~mvillagra/geany.colors.tar.gz  && tar -zxf geany.colors.tar.gz -C ~/.config/geany/colorschemes/
+Este es el repositorio oficial del notebook del equipo YesIncognitoPlease (a.k.a. You've Gone Incognito :$) para competencias ICPC (International Collegiate Programming Competitions).
 
-2) En el Geany:
-View -> Change Color scheme...
-
-Villeador de C++
------------
-Taken from:
-https://github.com/Scylardor/cminify
+Fue clonado de "El Diego", el [notebook](https://github.com/mvpossum/eldiego) usado por el equipo "Caloventor en Dos", con el cual se consagraron Campeones Latinoamericanos en 2016.
