@@ -1,9 +1,0 @@
-Ideas:
-
-  - Continuar con la tabla de problemas normal, pero agregándole que 
-  cada uno pone su marca al problema que leyó.
-  - Designar uno encargado de la actualización de la tablita, pero 
-  preferentemente que cada uno esté conciente de mantenerla actualizada.
-  - Fichas!, conseguir 3 fichas de cada color, y que en la competencia 
-  cada uno las use para marcar los problemas en los que se está fijando.
-

@@ -1,7 +1,0 @@
-Cosas a verificar antes de la submission:
-  - Quitar el freopen.
-  - Checkear que la DP/Recursiva no supera los límites de la stack.
-  - Checkear el problema contra los casos de ejemplo.
-  - Leer bien el enunciado.
-  - Ordenar los arreglos si no te lo garantizan.
-  - Checkear los límites de los arreglos y TODO LUGAR EN DONDE SE ACCEDEN.
