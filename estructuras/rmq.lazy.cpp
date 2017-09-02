@@ -46,7 +46,7 @@ struct RMQ {
 		}
 		int c = (a + b)/2;
 		alterar(val, i, j, 2*n, a, c); alterar(val, i, j, 2*n + 1, c, b);
-		t[n] = operacion(t[2*n], t[2*n + 1]); // Por esto es el push de arriba
+		t[n] = operacion(t[2*n], t[2*n + 1]);
 	}
 	void alterar(alt val, int i, int j){ alterar(val, i, j, 1, 0, sz); }
 } rmq;

@@ -1,3 +1,7 @@
+// Dado un arreglo y una operacion asociativa idempotente:
+// get(i, j) opera sobre el rango [i, j).
+// Restriccion: LVL >= ceil(log n). Usar [ ] para llenar
+// el arreglo y luego build().
 struct RMQ {
 	#define LVL 17
 	tipo vec[LVL][1 << (LVL + 1)];
