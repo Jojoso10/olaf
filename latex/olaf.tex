@@ -1,9 +1,9 @@
 % Crear pdf con:
-% pdflatex -synctex=1 -interaction=nonstopmode -output-directory pre %.tex
+% pdflatex -synctex=1 -interaction=nonstopmode %.tex
 %"The PDF file may contain up to 25 pages of reference material, single-sided, letter or A4 size, with text and illustrations readable by a person with correctable eyesight without magnification from a distance of 1/2 meter."
 \input{helper/preamble.tex}
 \begin{document}
-\def\title{YesIncognitoPlease - Universidad Nacional de Rosario}
+\def\title{Olaf - YesIncognitoPlease - UNR}
 \centering{\includegraphics[width=3.5cm]{../miscellaneous/olaf}}
 \tableofcontents\newpage
  
@@ -12,7 +12,7 @@
 
 \section{Estructuras}%%%%%%%%%%%%%%%%%%ESTRUCTURAS%%%%%%%%%%%%%%%%%%
 \subsection{RMQ (static)}
-Dado un arreglo y una operacion asociativa \emph{idempotente}, get(i, j) opera sobre el rango [i, j). Restriccion: LVL $\ge$ ceil(logn); Usar [ ] para llenar arreglo y luego build().
+Dado un arreglo y una operacion asociativa \emph{idempotente}, get(i, j) opera sobre el rango [i, j). Restriccion: LVL $\ge$ ceil(log n). Usar [ ] para llenar arreglo y luego build().
 \cppfile{../estructuras/rmq.static.cpp}
 \subsection{RMQ (dynamic)}
 \cppfile{estructuras/rmq.dynamic.cpp}
@@ -377,23 +377,13 @@ cout << setprecision(2) << fixed;
 #include <iomanip>
 cout << setfill(' ') << setw(3) << 2 << endl;
 \end{code}
-\subsection*{Leer hasta fin de linea}
-\begin{code}
-#include <sstream>
-//hacer cin.ignore() antes de getline()
-while(getline(cin, line)){
-   	 istringstream is(line);
-   	 while(is >> X)
-   		 cout << X << " ";
-   	 cout << endl;
-}
-\end{code}
 \subsection*{Aleatorios}
 \begin{code}
 #define RAND(a, b) (rand()%(b-a+1)+a)
 srand(time(NULL));
+random_shuffle(A, A + n);
 \end{code}
-\subsection*{Doubles Comp.}
+\subsection*{Comparación de Doubles}
 \begin{code}
 const double EPS = 1e-9;
 x == y	<=> fabs(x-y) < EPS
@@ -455,7 +445,16 @@ for(int sbm=bm; sbm; sbm=(sbm-1)&bm)
 \end{code}
 \subsection*{File setup}
 \begin{code}
-//tambien se pueden usar comas: {a, x, m, l}
+// tambien se pueden usar comas: {a, x, m, l}
 touch {a..l}.in; tee {a..l}.cpp < template.cpp
+\end{code}
+\subsection*{Releer String}
+\begin{code}
+string s; int n;
+getline(cin, s);
+stringstream leer(s);
+while(leer >> n){
+	// do something ...
+}
 \end{code}
 \end{document}
