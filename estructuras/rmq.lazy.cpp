@@ -36,7 +36,7 @@ struct RMQ {
 	}
 	node get(int i, int j){ return get(i, j, 1, 0, sz); }
 	// Altera los valores en [i, j) con una alteracion de val
-	void alterar(alt val, int i, int j, int n, int a, int b){//O(lgn)
+	void alterar(alt val, int i, int j, int n, int a, int b){ // O(lg n)
 		push(n, a, b);
 		if(j <= a || i >= b) return;
 		if(i <= a && b <= j){
