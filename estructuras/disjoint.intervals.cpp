@@ -1,6 +1,6 @@
-bool operator <(const ii &a, const ii &b){ return a.first < b.first; }
 // Guarda intervalos como [first, second]
 // En caso de colision, los une en un solo intervalo
+bool operator <(const ii &a, const ii &b){ return a.first < b.first; }
 struct disjoint_intervals {
 	set<ii> segs;
 	void insert(ii v){ // O(lg n)
