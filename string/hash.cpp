@@ -27,7 +27,7 @@ struct Hash {
 	}
 };
 unordered_set<ii, Hash> s;
-unordered_map<ii, int, Hash> m;//map<key, value, hasher>
+unordered_map<ii, int, Hash> m; // map<key, value, hasher>
 
 int main() {
   srand(time(NULL));
