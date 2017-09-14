@@ -1,6 +1,5 @@
-#define MOD 1000000007
-ll expmod (ll b, ll e, ll m){//O(log b)
+ll pot(ll b, ll e){ // O(log e)
 	if(!e) return 1;
-	ll q= expmod(b,e/2,m); q=(q*q)%m;
-	return e%2? (b * q)%m : q;
+	ll q = pot(b, e/2); q = (q * q) % MOD;
+	return (e % 2 ? (b * q) % MOD : q);
 }
