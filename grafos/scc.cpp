@@ -28,7 +28,7 @@ struct Korasaju {
   void dfsRev(vector<int> &F, int v){
     used[v] = true;
     forn(i, revG[v].size()) if(!used[ revG[v][i] ])
-      dfsRev(F, v);
+      dfsRev(F, revG[v][i]);
     F.pb(v);
   }
   void build(){
