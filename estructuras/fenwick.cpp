@@ -1,7 +1,7 @@
 // Para 2D: tratar cada columna como un Fenwick Tree, 
 // agregando un for anidado en cada operacion.
 struct Fenwick {
-  static const int sz = 1 << 17 + 1;
+  static const int sz = (1 << 17) + 1;
   tipo t[sz];
   void adjust(int p, tipo v){ // p en [1, sz), O(lg n)
     for(int i = p; i < sz; i += (i & -i)) t[i] += v; 
