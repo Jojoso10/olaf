@@ -1,4 +1,4 @@
-//rotates matrix A(n, m) 90 degrees clockwise
+//rotates matrix A(n, m) 90 degrees counter-clockwise
 //using auxiliary matrix aux(faster)
 void rot_mat(tipo (&A)[MAXN][MAXN]){
 	tipo aux[MAXN][MAXN];
